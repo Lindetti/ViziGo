@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1017;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@keyframes poof {
+  0%   { 
+    opacity: 0;
+    transform: translateY(-5px)
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}

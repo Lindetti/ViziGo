@@ -1,0 +1,23 @@
+footer {
+    background-color: #16181f;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+footer a{
+    color: #00CED1;
+    text-decoration: none;
+}
+
+.name {
+    color: #00CED1;
+}
