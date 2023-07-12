@@ -1,7 +1,7 @@
 import "./Content.css";
 import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import Modal from "../Modal/Modal";
+
 
 const Content = () => {
 const getShowsUrl = `https://api.tvmaze.com/shows`;
@@ -87,7 +87,10 @@ return (
      
      <div className="base-box">
     <div className="content-title">
-      <h1 className="category-title">Action</h1>
+    <div className="category-title-div">
+     <h1 className="category-title">Action</h1>
+     <hr className="content-title-hr" />
+     </div>
 
       <div className="move-right-movie-left">
       <button className="left" onClick={() => handleLeftClick("action")}>&lt;</button>
@@ -122,7 +125,10 @@ return (
 
      <div className="base-box">
      <div className="content-title">
-      <h1 className="category-title">Adventure</h1>
+     <div className="category-title-div">
+     <h1 className="category-title">Adventure</h1>
+     <hr className="content-title-hr" />
+     </div>
 
       <div className="move-right-movie-left">
       <button className="left" onClick={() => handleLeftClick("adventure")}>&lt;</button>
@@ -156,7 +162,10 @@ return (
 
      <div className="base-box">
     <div className="content-title">
-      <h1 className="category-title">Comedy</h1>
+    <div className="category-title-div">
+     <h1 className="category-title">Comedy</h1>
+     <hr className="content-title-hr" />
+     </div>
 
       <div className="move-right-movie-left">
       <div className="move-right-movie-left">
@@ -191,7 +200,10 @@ return (
 
     <div className="base-box">
     <div className="content-title">
-      <h1 className="category-title">Science-Fiction</h1>
+      <div className="category-title-div">
+     <h1 className="category-title">Science-Fiction</h1>
+     <hr className="content-title-hr" />
+     </div>
 
       <div className="move-right-movie-left">
       <button className="left" onClick={() => handleLeftClick("scienceFiction")}>&lt;</button>
@@ -226,7 +238,10 @@ return (
 
   <div className="base-box">
   <div className="content-title">
-      <h1 className="category-title">Drama</h1>
+  <div className="category-title-div">
+     <h1 className="category-title">Drama</h1>
+     <hr className="content-title-hr" />
+     </div>
 
       <div className="move-right-movie-left">
       <button className="left" onClick={() => handleLeftClick("drama")}>&lt;</button>
@@ -259,7 +274,10 @@ return (
 
    <div className="base-box">
    <div className="content-title">
-      <h1 className="category-title">Horror</h1>
+   <div className="category-title-div">
+     <h1 className="category-title">Horror</h1>
+     <hr className="content-title-hr" />
+     </div>
 
       <div className="move-right-movie-left">
       <button className="left" onClick={() => handleLeftClick("horror")}>&lt;</button>
