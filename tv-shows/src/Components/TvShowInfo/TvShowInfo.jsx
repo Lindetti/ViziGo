@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef} from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 const TvShowInfo = () => {
   const { id } = useParams();
   const [showInfo, setShowInfo] = useState([]);
@@ -76,7 +77,7 @@ const TvShowInfo = () => {
      <div className="title-info">
         <div className="title-movie-info">
         <p>{showInfo.premiered}</p>
-         <p>|</p>
+        <p>|</p>
         <p>{showInfo.runtime === null ? "Runtime no info" : `${showInfo.runtime} min`}</p>
         <p>|</p>
         <div className="genres">
@@ -104,7 +105,7 @@ const TvShowInfo = () => {
     <p className="info-title">Information</p>
     <hr className="information-hr" />
     <p className="information-class"> Production Company: {showInfo.network?.name || "Unknown"} </p>
-    <p className="information-class">Rating: {showInfo.rating?.average || "Unknown"}</p>
+    <p className="information-class">Rating: {showInfo.rating?.average} </p>
     <p className="information-class">Released: {showInfo.premiered}</p>
     <p className="information-class">Status: {showInfo.status || "Unknown"}</p>
     {showInfo.webChannel !== null ? (
