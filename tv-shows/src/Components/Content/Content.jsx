@@ -98,7 +98,7 @@ return (
       </div>
     </div>
     <div className="shows-wrapper">
-        {action.slice(actionIndex, actionIndex + 6).map((actionItem, index) => (
+        {action.slice(actionIndex, actionIndex + (window.innerWidth < 600 ? 3 : 6)).map((actionItem, index) => (
           <div key={index} className="shows">
             <div className="box-image">
             <Link to={`/info/${actionItem.id}`}>
@@ -136,7 +136,7 @@ return (
       </div>
     </div>
       <div className="shows-wrapper">
-        {adventure.slice(adventureIndex, adventureIndex + 6).map((adventure, index) => (
+        {adventure.slice(adventureIndex, adventureIndex + (window.innerWidth < 600 ? 3 : 6)).map((adventure, index) => (
           <div key={index} className="shows">
             <div className="box-image">
             <Link to={`/info/${adventure.id}`}>
@@ -175,7 +175,7 @@ return (
       </div>
     </div>
       <div className="shows-wrapper">
-        {comedy.slice(comedyIndex, comedyIndex + 6).map((comedy, index) => (
+        {comedy.slice(comedyIndex, comedyIndex + (window.innerWidth < 600 ? 3 : 6)).map((comedy, index) => (
           <div key={index} className="shows">
             <div className="box-image">
             <Link to={`/info/${comedy.id}`}>
@@ -211,7 +211,7 @@ return (
       </div>
     </div>
       <div className="shows-wrapper">
-        {scienceFiction.slice(scienceFictionIndex, scienceFictionIndex + 6).map((scienceFiction, index) => (
+        {scienceFiction.slice(scienceFictionIndex, scienceFictionIndex + (window.innerWidth < 600 ? 3 : 6)).map((scienceFiction, index) => (
           <div key={index} className="shows">
             <div className="box-image">
             <Link to={`/info/${scienceFiction.id}`}>
@@ -249,7 +249,7 @@ return (
       </div>
     </div>
       <div className="shows-wrapper">
-        {drama.slice(dramaIndex, dramaIndex + 6).map((drama, index) => (
+        {drama.slice(dramaIndex, dramaIndex + (window.innerWidth < 600 ? 3 : 6)).map((drama, index) => (
           <div key={index} className="shows">
             <div className="box-image">
             <Link to={`/info/${drama.id}`}>
@@ -285,7 +285,7 @@ return (
       </div>
     </div>
       <div className="shows-wrapper">
-        {horror.slice(horrorIndex, horrorIndex + 6).map((horror, index) => (
+        {horror.slice(horrorIndex, horrorIndex + (window.innerWidth < 600 ? 3 : 6)).map((horror, index) => (
           <div key={index} className="shows">
             <div className="box-image">
             <Link to={`/info/${horror.id}`}>
