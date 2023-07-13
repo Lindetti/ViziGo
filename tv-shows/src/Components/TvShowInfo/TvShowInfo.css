@@ -216,3 +216,14 @@ hr {
     object-fit: cover;
     border-radius: 5px;
 }
+
+@media only screen and (max-width: 900px) {
+
+    .base-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+    }
+    
+      }
