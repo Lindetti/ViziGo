@@ -76,15 +76,17 @@ const TvShowInfo = () => {
 
      <div className="title-info">
         <div className="title-movie-info">
-        <p>{showInfo.premiered}</p>
-        <p>|</p>
-        <p>{showInfo.runtime === null ? "Runtime no info" : `${showInfo.runtime} min`}</p>
-        <p>|</p>
         <div className="genres">
     {showInfo.genres.map((genre, index) => {
       return <p className="show-genres" key={index}>{genre}</p>;
     })}
   </div>
+        <div className="show-first-info">
+        <p className="first-line">|</p>
+        <p>{showInfo.premiered.split("-")[0]}</p>
+        <p>|</p>
+        <p>{showInfo.runtime === null ? "Runtime no info" : `${showInfo.runtime} min`}</p>
+        </div>
         </div>
 
         <div className="title-buttons">
@@ -127,7 +129,7 @@ const TvShowInfo = () => {
      <hr className="other-hr" />
      <div className="related-shows-content">
 
-              {relatedShows.slice(0, 5).map((show) => (
+              {relatedShows.slice(0, (window.innerWidth < 600 ? 4 : 5)).map((show) => (
                 <div className="related-show-div" key={show.id}>
           <div className="related-show-image">
           <Link to={`/info/${show.id}`}>

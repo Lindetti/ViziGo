@@ -1,5 +1,5 @@
 .modal {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -68,7 +68,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.copy {
+.copy1 {
     color: #00CED1;
     font-family: 'Rajdhani', sans-serif;
 }
@@ -104,4 +104,64 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .copy2 {
+    display: none;
+  }
+
+  @media only screen and (max-width: 524px) {
+    .modal {
+        overflow: auto;
+        min-height: 100vh;
+        background-color: #1e1e23;
+    }
+    
+    .modal-content {
+      flex-direction: column-reverse;
+      justify-content: start;
+     min-height: 100vh;
+     gap: 1rem;
+    }
+  
+    .copy1 {
+        display: none;
+    }
+
+    .copy2 {
+        display: block;
+        color:  white;
+        margin-top: 0.5rem;
+    }
+  
+    .modal-information {
+        width: 100%;
+        height: auto;
+        justify-content: start;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+
+      .modal-text {
+       padding: 1rem;
+      }
+
+      .mobile-view {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mobile {
+        height: 400px;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+       
+
   }
