@@ -43,7 +43,9 @@ const handleOnChange = (event) => {
         <div className="all-wrapper"> 
         <div className="all-content-wrapper">
         <div className="all-header">
-        <h1>All Shows</h1>
+        <div className="title-all-shows">
+       <h1>All Shows</h1>
+       </div>
         <input type="text" 
         placeholder="search" 
         value={input}

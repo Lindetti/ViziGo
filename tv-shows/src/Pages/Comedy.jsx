@@ -19,7 +19,9 @@ useEffect(() => {
     return (
         <div className="all-wrapper"> 
         <div className="all-content-wrapper">
-        <h1>Comedy</h1>
+        <div className="all-title">
+       <h1>Comedy</h1>
+       </div>
         <div className="all-content">
         {comedy.slice(0, 66).map((show, index) => {
             return (
