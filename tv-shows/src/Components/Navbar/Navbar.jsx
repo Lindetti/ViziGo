@@ -50,6 +50,9 @@ const handleClickOutside = (event) => {
    isOpen={false} // Set isOpen prop to false by default
       />
             <div className={`dropdown-content ${showDropDown ? "show-dropdown" : ""}`}>
+            <div className="dropdown-title">
+            <NavLink className="site-nameTwo" to="/">FlixPrime</NavLink>
+            </div>
              <div className="dropdown-title">
              <p>Categories </p>
             <hr />

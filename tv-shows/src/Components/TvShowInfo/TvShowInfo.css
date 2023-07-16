@@ -222,7 +222,7 @@ hr {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 910px) {
 
     .base-content {
         flex-direction: column;
@@ -272,5 +272,33 @@ hr {
 
         .related-shows-content {
             justify-content: center;
+            height: auto;
+        }
+
+        .related-show-div {
+            width: 180px;
+            height: 300px;
+        }
+
+        .related-show-image {
+            height: 250px;
+            width: 180px;
+            background-color: blue;
+        }
+      }
+      
+      @media only screen and (max-width: 400px) {
+        .related-shows-content {
+            height: auto;
+        }
+
+        .related-show-div {
+            height: 250px;
+            width: auto;
+        }
+
+        .related-show-image {
+            height: 200px;
+            width: 150px;
         }
       }
