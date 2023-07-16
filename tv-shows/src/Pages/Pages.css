@@ -110,10 +110,13 @@
         .all-wrapper {
             width: 100%;
             padding: 1rem;
+            height: auto;
         }
 
         .all-content {
             width: 100%;
+            height: auto;
+            gap: 1.5rem;
         }
 
         .all-title {
@@ -126,6 +129,10 @@
             width: 150px;
         }
 
+        .tv-show-image {
+            height: 200px;
+        }
+
         .all-header {
            flex-direction: column;
            justify-content: center;
@@ -135,11 +142,15 @@
         }
 
         .all-header input {
-            width: 320px;
+            width: 330px;
         }
 
         .all-left-right {
             padding-left: 0.5rem;
             padding-right: 0.5rem;
+        }
+
+        .all-shows-title {
+            display: none;
         }
       }
