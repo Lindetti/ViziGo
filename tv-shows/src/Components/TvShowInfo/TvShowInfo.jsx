@@ -138,7 +138,7 @@ const TvShowInfo = () => {
         )}
     </Link>
           </div>
-    <p>{show.name}</p>
+    <p className="tvShow-info-name">{show.name}</p>
                 </div>
               ))}
                    </div>
