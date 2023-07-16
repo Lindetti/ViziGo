@@ -51,7 +51,7 @@ const handleClickOutside = (event) => {
       />
             <div className={`dropdown-content ${showDropDown ? "show-dropdown" : ""}`}>
             <div className="dropdown-title">
-            <NavLink className="site-nameTwo" to="/">FlixPrime</NavLink>
+            <NavLink className="site-nameTwo" onClick={() => setShowDropDown(false)} to="/">FlixPrime</NavLink>
             </div>
              <div className="dropdown-title">
              <p>Categories </p>

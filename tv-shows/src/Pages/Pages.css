@@ -65,10 +65,11 @@
 .all-left-right {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     gap: 1rem;
     height: 50px;
     align-items: center;
+    width: 100%;
 }
 
 .all-left-right p {
@@ -109,7 +110,7 @@
       @media only screen and (max-width: 524px) {
         .all-wrapper {
             width: 100%;
-            padding: 1rem;
+            padding: 0;
             height: auto;
         }
 
@@ -120,16 +121,16 @@
         }
 
         .all-title {
-            padding-left: 2rem;
-            margin-top: 0.5rem;
+            padding-left: 2.5rem;
+            margin-top: 2rem;
         }
 
         .all-shows {
-            height: 250px;
+            height: 210px;
             width: 150px;
         }
 
-        .tv-show-image {
+        .all-shows-image {
             height: 200px;
         }
 
@@ -146,8 +147,9 @@
         }
 
         .all-left-right {
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-bottom: 2rem;
         }
 
         .all-shows-title {
