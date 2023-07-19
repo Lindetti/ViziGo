@@ -6,12 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-family: 'Roboto', sans-serif;
 }
 
 .content {
-    width: 1200px;
+    width: 1150px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,8 @@
     flex-direction: column;
     gap: 0.8rem;
     margin-bottom: 1.5rem;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .content-title {
@@ -46,14 +48,11 @@
     gap: 1rem;
 }
 
-.see-all {
-    display: none;
-}
 
 .left, .right {
     background-color: #00CED1;
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     font-size: 1.5rem;
     border: none;
@@ -68,37 +67,42 @@
     background-color: white;
 }
 
-.test {
-    display: flex;
-    gap: 1rem;
-    padding: 0.2rem;
-    align-items: center;
+.mobile-container {
+    width: 100%; 
+    height: 100%;
 }
 
-.shows-wrapper-outer {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Hide vertical scrollbar */
-  }
+.shows-wrapper-mobile {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 0.5rem;
+    overflow-x: auto; 
+}
 
 .shows-wrapper {
     display: flex;
     height: 100%;
     gap: 1.20rem;
     width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    padding: 0.2rem;
+}
+
+.shows-mobile {
+    width: 100px;
+    height: 150px;
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    flex: 0 0 auto;
 }
 
 .shows {
     width: 200px;
     height: 340px;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
     animation-name: fade;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    
 }
 
 .show-all {
