@@ -50,7 +50,7 @@ useEffect(() => {
 const handleRightClick = (category, length) => {
   if (category === "action" && actionIndex + 6 < length) {
     setActionIndex(actionIndex + 6);
-  } else if (category === "adventure" && adventureIndex + 6 < length) {
+  } else if (category === "adventure" && adventureIndex + 5 < length) {
     setAdventureIndex(adventureIndex + 6);
   } else if (category === "scienceFiction" && scienceFictionIndex + 6 < length) {
     setScienceFictionIndex(scienceFictionIndex + 6);
@@ -66,7 +66,7 @@ const handleRightClick = (category, length) => {
 
 const handleLeftClick = (category) => {
   if (category === "action" && actionIndex > 18) {
-    setActionIndex(actionIndex - 6);
+    setActionIndex(actionIndex - 5);
   } else if (category === "adventure" && adventureIndex > 1) {
     setAdventureIndex(adventureIndex - 6);
   } else if (category === "scienceFiction" && scienceFictionIndex > 9) {
@@ -80,6 +80,8 @@ const handleLeftClick = (category) => {
   }
 
 };
+
+
 
 return (
   <div className="content-wrapper">
@@ -102,6 +104,8 @@ return (
        </div>
       </div>
     </div>
+    <div className="test"> 
+    <div className="shows-wrapper-outer"> 
     <div className="shows-wrapper">
         {action.slice(actionIndex, actionIndex + (window.innerWidth < 600 ? 3 : window.innerWidth < 900 ? 4 : 6)).map((actionItem, index) => (
           <div key={index} className="shows">
@@ -123,7 +127,9 @@ return (
     <p>from this category</p>
   </div>
  </Link>
-)}
+)} 
+</div>
+</div>
       </div>
      </div>
 

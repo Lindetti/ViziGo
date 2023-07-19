@@ -68,18 +68,30 @@
     background-color: white;
 }
 
+.test {
+    display: flex;
+    gap: 1rem;
+    padding: 0.2rem;
+    align-items: center;
+}
 
+.shows-wrapper-outer {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  }
 
 .shows-wrapper {
     display: flex;
-    height: 355px;
+    height: 100%;
     gap: 1.20rem;
     width: 100%;
-    overflow: hidden;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    padding: 0.2rem;
 }
 
 .shows {
-    width: 184px;
+    width: 200px;
     height: 340px;
     display: flex;
     flex-direction: column;
@@ -166,10 +178,13 @@
 
 
   @media only screen and (max-width: 524px) {
-
     .content {
         width: 100%;
         padding: 1rem;
+    }
+
+    .category-title {
+        font-size: 1.3rem;
     }
 
     .see-all {
