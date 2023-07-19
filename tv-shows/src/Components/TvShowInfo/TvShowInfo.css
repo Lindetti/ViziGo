@@ -136,6 +136,7 @@
 
 .info-title {
     text-transform: uppercase;
+    color: white;
 }
 
 .story p {
@@ -149,12 +150,12 @@ hr {
 
 .story-hr {
     width: 85px;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
 }
 
 .information-hr {
     width: 110px;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
 }
 
 .language-hr {
@@ -174,7 +175,7 @@ hr {
 }
 
 .other-hr {
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
 }
 
 .languages {
@@ -182,9 +183,7 @@ hr {
     flex-direction: column;
 }
 
-.language-class, .information-class{
-    margin-top: 0.5rem;
-}
+
 
 .related-shows {
     display: flex;
@@ -236,6 +235,10 @@ hr {
        
         .first-line {
             display: none;
+        }
+
+        .title-buttons {
+            justify-content: center;
         }
        
 
