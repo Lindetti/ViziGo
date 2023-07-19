@@ -35,7 +35,7 @@ const Modal = ({ closeModal, isModalOpen }) => {
             </div>
             </div>
             <div className="modal-information">
-                <h1 className="site-name2">FlixPrime</h1>
+                <h1 className="site-name2">FlixRush</h1>
             <p className="modal-text">Unlimited entertainment, anytime, anywhere. Stream on any device, at your convenience. Join us today and start enjoying your favorite content with a click. </p>
            <p className="copy1">Copy 2023 @ All rights reserved</p>
             </div>

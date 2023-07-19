@@ -90,8 +90,14 @@ const TvShowInfo = () => {
         </div>
 
         <div className="title-buttons">
-        <a href="#">Watch Later</a>
-        <a href="#">Share</a>
+       <div className="watch-later">
+      <img src="/watch-later.png" alt="icon" />
+       <a href="#">Watch Later</a>
+       </div>
+      <div className="share">
+      <img src="/share.png" alt="icon" />
+      <a href="#">Share</a>
+      </div>
         </div>
      </div>
 
