@@ -19,8 +19,10 @@ useEffect(() => {
     return (
         <div className="all-wrapper"> 
         <div className="all-content-wrapper">
+          <div className="all-header-pages"> 
         <div className="all-title">
-       <h1>Drama</h1>
+       <h1 className="category-title-pages">Drama</h1>
+       </div>
        </div>
         <div className="all-content">
         {drama.slice(3, 153).map((show, index) => {

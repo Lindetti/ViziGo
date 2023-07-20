@@ -18,8 +18,10 @@ useEffect(() => {
     return (
         <div className="all-wrapper"> 
         <div className="all-content-wrapper">
+          <div className="all-header-pages"> 
         <div className="all-title">
-       <h1>Adventure</h1>
+       <h1 className="category-title-pages">Adventure</h1>
+       </div>
        </div>
         <div className="all-content">
         {adventure.slice(0, 48).map((show, index) => {

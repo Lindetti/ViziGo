@@ -44,10 +44,10 @@ const handleOnChange = (event) => {
         <div className="all-content-wrapper">
         <div className="all-header">
         <div className="title-all-shows">
-       <h1>All Shows</h1>
+       <h1 className="all-shows-category">All Shows</h1>
        </div>
         <input type="text" 
-        placeholder="search" 
+        placeholder="search series" 
         value={input}
         onChange={handleOnChange}
         />

@@ -1,5 +1,5 @@
 .modal {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -10,10 +10,12 @@
     align-items: center;
     justify-content: center;
     animation: poof 0.4s;
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
 }
 
 .modal-content {
-    background-color: #1e1e23;
+  background-color: rgb(0, 30, 35, 0.9);
     height: 100%;
     width: 800px;
     position: relative;
@@ -33,8 +35,8 @@
 
 .mobile {
     background-color: black;
-    height: 600px;
-    width: 85%;
+    height: 500px;
+    width: 70%;
     border-radius: 20px;
     border: 4px solid lightgray;
 }
@@ -118,6 +120,7 @@
     }
     
     .modal-content {
+      background-color: rgb(0, 30, 35, 0.8);
       flex-direction: column-reverse;
       justify-content: start;
      min-height: 100vh;
@@ -136,11 +139,16 @@
   
     .modal-information {
         width: 100%;
-        height: auto;
+        height: 280px;
         justify-content: start;
         align-items: center;
         margin-top: 1rem;
-        gap: 1rem;
+        gap: 0rem;
+        padding: 1rem;
+      }
+
+      .modal-information p {
+        font-size: 1.1rem;
       }
 
       .modal-text {
@@ -156,8 +164,8 @@
       }
 
       .mobile {
-        height: 400px;
-        width: 55%;
+        height: 350px;
+        width: 45%;
         display: flex;
         justify-content: center;
         align-items: center;
