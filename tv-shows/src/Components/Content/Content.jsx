@@ -86,6 +86,8 @@ const handleLeftClick = (category) => {
 return (
   <div className="content-wrapper">
     <div className="content">
+
+    {/*  ACTION */}  
     {window.innerWidth < 600 ? (
   <div className="base-box">
     <div className="content-title">

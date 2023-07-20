@@ -19,9 +19,12 @@ useEffect(() => {
     return (
         <div className="all-wrapper"> 
         <div className="all-content-wrapper">
+        <div className="all-header-pages"> 
         <div className="all-title">
-       <h1>Science-Fiction</h1>
+       <h1 className="category-title-pages">Science-Fiction</h1>
        </div>
+       </div>
+
         <div className="all-content">
         {sciencefiction.slice(0, 36).map((show, index) => {
             return (

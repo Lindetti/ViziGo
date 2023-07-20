@@ -35,6 +35,7 @@
 .category-title {
     font-size: 1.5rem;
     text-transform: uppercase;
+    border-bottom: 1px solid #00CED1;
 }
 
 .move-right-movie-left {
