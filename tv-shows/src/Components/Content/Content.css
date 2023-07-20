@@ -42,7 +42,6 @@
 .category-title {
     font-size: 1.5rem;
     text-transform: uppercase;
-    border-bottom: 1px solid #00CED1;
 }
 
 .move-right-movie-left {
@@ -110,12 +109,11 @@
     animation-name: fade;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    
 }
 
 .show-all {
     width: 180px;
-    height: 282px;
+    height: 272px;
     background-color: #1e1e23;
     display: flex;
     flex-direction: column;
@@ -123,6 +121,7 @@
     align-items: center;
     gap: 0.5rem;
     border-radius: 5px;
+    border: 1px solid #00CED1;
 }
 
 .show-all-link {
@@ -150,6 +149,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    border: 1px solid #00CED1;
 }
 
 

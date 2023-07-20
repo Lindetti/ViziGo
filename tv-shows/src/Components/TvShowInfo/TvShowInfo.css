@@ -248,6 +248,11 @@
         align-items: center;
         width: 1000px;
     }
+
+    .related-show-div {
+        height: 220px;
+        width: 125px;
+    }
     
       }
 
