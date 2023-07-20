@@ -24,7 +24,14 @@
     margin-bottom: 1.5rem;
     width: 100%;
     overflow-x: auto;
+ -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
+
+.base-box::-webkit-scrollbar {
+  display: none;
+}
+
 
 .content-title {
     display: flex;
