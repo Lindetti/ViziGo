@@ -114,7 +114,6 @@
     align-items: center;
     gap: 0.5rem;
     border-radius: 5px;
-    border: 1px solid #00CED1;
 }
 
 .show-all-link {
@@ -142,7 +141,8 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    border: 1px solid #00CED1;
+    border: 1px solid #00ced160;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 

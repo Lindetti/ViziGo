@@ -66,7 +66,7 @@ const handleRightClick = (category, length) => {
 
 const handleLeftClick = (category) => {
   if (category === "action" && actionIndex > 18) {
-    setActionIndex(actionIndex - 5);
+    setActionIndex(actionIndex - 6);
   } else if (category === "adventure" && adventureIndex > 1) {
     setAdventureIndex(adventureIndex - 6);
   } else if (category === "scienceFiction" && scienceFictionIndex > 9) {
@@ -130,7 +130,7 @@ return (
         </div>
       </div>
     </div>
-    <div className="shows-wrapper">
+    <div className="shows-wrapper" >
       {action.slice(actionIndex, actionIndex + (window.innerWidth < 900 ? 4 : 6)).map((actionItem, index) => (
         <div key={index} className="shows">
           <div className="box-image">
