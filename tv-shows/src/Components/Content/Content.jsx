@@ -125,8 +125,8 @@ return (
       </div>
       <div className="move-right-movie-left">
         <div className="move-next-buttons">
-          <button className="left" onClick={() => handleLeftClick("action")}>&lt;</button>
-          <button className="right" onClick={() => handleRightClick("action", action.length)}>&gt;</button>
+          <button className="left" onClick={() => handleLeftClick("action")}><img src="/left.png" alt="icon" /></button>
+          <button className="right" onClick={() => handleRightClick("action", action.length)}><img src="/right.png" alt="icon" /></button>
         </div>
       </div>
     </div>
@@ -194,8 +194,8 @@ return (
       </div>
       <div className="move-right-movie-left">
         <div className="move-next-buttons">
-          <button className="left" onClick={() => handleLeftClick("adventure")}>&lt;</button>
-          <button className="right" onClick={() => handleRightClick("adventure", adventure.length)}>&gt;</button>
+        <button className="left" onClick={() => handleLeftClick("adventure")}><img src="/left.png" alt="icon" /></button>
+          <button className="right" onClick={() => handleRightClick("adventure", adventure.length)}><img src="/right.png" alt="icon" /></button>
         </div>
       </div>
     </div>
@@ -263,8 +263,8 @@ return (
       </div>
       <div className="move-right-movie-left">
         <div className="move-next-buttons">
-          <button className="left" onClick={() => handleLeftClick("comedy")}>&lt;</button>
-          <button className="right" onClick={() => handleRightClick("comedy", comedy.length)}>&gt;</button>
+        <button className="left" onClick={() => handleLeftClick("comedy")}><img src="/left.png" alt="icon" /></button>
+          <button className="right" onClick={() => handleRightClick("comedy", comedy.length)}><img src="/right.png" alt="icon" /></button>
         </div>
       </div>
     </div>
@@ -332,8 +332,8 @@ return (
       </div>
       <div className="move-right-movie-left">
         <div className="move-next-buttons">
-          <button className="left" onClick={() => handleLeftClick("scienceFiction")}>&lt;</button>
-          <button className="right" onClick={() => handleRightClick("scienceFiction", scienceFiction.length)}>&gt;</button>
+        <button className="left" onClick={() => handleLeftClick("scienceFiction")}><img src="/left.png" alt="icon" /></button>
+          <button className="right" onClick={() => handleRightClick("scienceFiction", scienceFiction.length)}><img src="/right.png" alt="icon" /></button>
         </div>
       </div>
     </div>
@@ -401,8 +401,8 @@ return (
       </div>
       <div className="move-right-movie-left">
         <div className="move-next-buttons">
-          <button className="left" onClick={() => handleLeftClick("drama")}>&lt;</button>
-          <button className="right" onClick={() => handleRightClick("drama", drama.length)}>&gt;</button>
+        <button className="left" onClick={() => handleLeftClick("drama")}><img src="/left.png" alt="icon" /></button>
+          <button className="right" onClick={() => handleRightClick("drama", drama.length)}><img src="/right.png" alt="icon" /></button>
         </div>
       </div>
     </div>
@@ -469,8 +469,8 @@ return (
       </div>
       <div className="move-right-movie-left">
         <div className="move-next-buttons">
-          <button className="left" onClick={() => handleLeftClick("horror")}>&lt;</button>
-          <button className="right" onClick={() => handleRightClick("horror", horror.length)}>&gt;</button>
+        <button className="left" onClick={() => handleLeftClick("horror")}><img src="/left.png" alt="icon" /></button>
+          <button className="right" onClick={() => handleRightClick("horror", horror.length)}><img src="/right.png" alt="icon" /></button>
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@
     height: 500px;
     width: 70%;
     border-radius: 20px;
-    border: 4px solid lightgray;
+    border: 5px solid rgb(128, 126, 126);
 }
 
 .mobile img {
@@ -139,7 +139,7 @@
   
     .modal-information {
         width: 100%;
-        height: 280px;
+        height: 220px;
         justify-content: start;
         align-items: center;
         margin-top: 1rem;
@@ -148,7 +148,7 @@
       }
 
       .modal-information p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
 
       .modal-text {
@@ -169,7 +169,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 1rem;
       }
        
+    .site-name2 {
+      font-size: 2rem;
+    }
 
   }

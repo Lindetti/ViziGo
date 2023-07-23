@@ -61,6 +61,16 @@
     align-items: center;
     justify-content: center;
     color: black !important;
+    transition: all 0.3s;
+}
+
+.left:hover,  .right:hover {
+    background-color: white;
+}
+
+.left img, .right img {
+    height: 20px;
+    width: 30px;
 }
 
 .left:focus, .right:focus {
@@ -141,8 +151,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    border: 1px solid #00ced160;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 

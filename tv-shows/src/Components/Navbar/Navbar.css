@@ -4,11 +4,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 15px;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid rgb(38, 73, 87);
+    border-bottom: 1px solid #0f5c5e;
     z-index: 9999;
 }
 
@@ -29,8 +29,8 @@ nav {
     position: absolute;
     z-index: 1;
     width: 350px;
-    height: 260px;
-    background-color: #1e1e23;
+    height: 225px;
+    background-color: #16181f;
     display: none;
     flex-direction: column;
     top: 65px;
@@ -40,20 +40,24 @@ nav {
     padding: 1rem;
     color: white;
     animation: poof 0.4s;
-    border-bottom: 5px solid #00CED1;
   }
 
   .dropdown-title hr {
     width: 100%;
     margin-top: 1rem;
+    border-color: #00CED1;
   }
 
   .dropdown-links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 1.3rem;
     font-size: 1.1rem;
     margin-top: 1rem;
+  }
+
+  .dropdown-links a:hover {
+    text-decoration: underline;
   }
 
   .show-dropdown {
@@ -68,11 +72,10 @@ nav {
     align-items: center;
 }
 
-
 .logo p {
     font-size: 1.2rem;
     text-transform: uppercase;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .dropdown-categorie, .dropdown-menu {
@@ -81,18 +84,18 @@ nav {
 }
 
 .site-name { 
-    color: #00CED1;
+  color: #00CED1;
     text-decoration: none;
-    font-size: 1.6rem;
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
 }
 
 .site-nameTwo {
   color: #00CED1;
   font-size: 2rem;
   text-decoration: none;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.2rem;
   display: none;
   margin-top: 1rem;
@@ -113,32 +116,45 @@ nav {
 }
 
 .mobile-app button {
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 1.5rem;
     border: 1px solid  #00CED1;
     color:  #00CED1;
     background: none;
     border-radius: 1px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.4s;
+}
+
+.mobile-app button:hover {
+  background-color: #00CED1;
+  color: black;
 }
 
 
 @media only screen and (max-width: 524px) {
 nav {
   padding-left: 5px;
+  padding-right: 8px;
+}
+
+.logo {
+  gap: 0.7rem;
 }
 
   .dropdown-content {
     left: 0;
     padding: 1rem;
-    height: 300px;
+    height: 220px;
   }
 
   .dropdown-links {
     gap: 1.5rem;
   }
 
+
   .site-name {
-    display: none;
+    font-size: 1.6rem;
   }
 
   .site-nameTwo {
