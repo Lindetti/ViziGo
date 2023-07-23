@@ -5,7 +5,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 20px;
     position: sticky;
     top: 0;
     border-bottom: 1px solid #0f5c5e;
@@ -18,10 +18,13 @@ nav {
     padding:  0.5rem;
     height: 70px;
     font-size: 1.3rem;
-    cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+  }
+
+  .mobile-menu-icon {
+    cursor: pointer;
   }
   
 
@@ -29,17 +32,18 @@ nav {
     position: absolute;
     z-index: 1;
     width: 350px;
-    height: 225px;
+    height: 285px;
     background-color: #16181f;
     display: none;
     flex-direction: column;
     top: 65px;
-    gap: 0.5rem;
+    gap: 1rem;
     font-family: 'Roboto', sans-serif;
     box-shadow: 5px 8px 10px 0px rgba(0,0,0,0.9);
     padding: 1rem;
     color: white;
     animation: poof 0.4s;
+    border-bottom: 1px solid #0f5c5e;
   }
 
   .dropdown-title hr {
@@ -48,12 +52,24 @@ nav {
     border-color: #00CED1;
   }
 
+  hr {
+    border-color: #00CED1;
+  }
+
   .dropdown-links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.3rem;
     font-size: 1.1rem;
-    margin-top: 1rem;
+  }
+
+  .icons-dropdown {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .icons-dropdown img {
+    width: 35px;
   }
 
   .dropdown-links a:hover {
@@ -131,6 +147,32 @@ nav {
   color: black;
 }
 
+.closeDiv-navbar {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-right: 0.5rem;
+  display: none;
+}
+
+  
+.close-x-navbar {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  font-size: 45px;
+  height: 30px;
+  width: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media only screen and (max-width: 524px) {
 nav {
@@ -142,11 +184,22 @@ nav {
   gap: 0.7rem;
 }
 
+.icons-dropdown {
+  display: none;
+}
+
+.closeDiv-navbar {
+  display: block;
+}
+
   .dropdown-content {
     left: 0;
     padding: 1rem;
-    height: 220px;
+    height: 250px;
+    gap: 1rem;
   }
+
+
 
   .dropdown-links {
     gap: 1.5rem;
@@ -161,9 +214,6 @@ nav {
     display: block;
   }
 
-  .dropdown-content {
-    gap: 0;
-  }
 }
 
 

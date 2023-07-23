@@ -47,9 +47,15 @@ const handleClickOutside = (event) => {
    rotate={0}
    borderRadius={0}
    animationDuration={0.5}
-   isOpen={false} // Set isOpen prop to false by default
+   isOpen={false} 
       />
             <div className={`dropdown-content ${showDropDown ? "show-dropdown" : ""}`}>
+            <div className="closeDiv-navbar">
+          <span className="close-x-navbar" onClick={closeDropdownFunc} >
+            &times;
+          </span>
+        </div>
+           
              <div className="dropdown-title">
              <p>Categories </p>
             <hr />
@@ -62,6 +68,11 @@ const handleClickOutside = (event) => {
             <NavLink to="/science-fiction" className="dropdown-categorie" onClick={closeDropdownFunc}>Sci-Fi</NavLink>
             <NavLink to="/drama" className="dropdown-categorie" onClick={closeDropdownFunc}>Drama</NavLink>
             <NavLink to="/horror" className="dropdown-categorie" onClick={closeDropdownFunc}>Horror</NavLink>
+            </div>
+            <hr />
+            <div className="icons-dropdown">
+           <a href="https://github.com/Lindetti" target="_blank"><img src="/github.png" alt="github" /></a>
+          <a href="https://www.linkedin.com/in/alexander-lind-2b2934199/" target="_blank"> <img src="/linkedin.png" alt="github" /></a>
             </div>
             </div>
          </div>
