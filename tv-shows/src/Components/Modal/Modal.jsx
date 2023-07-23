@@ -31,11 +31,11 @@ const Modal = ({ closeModal, isModalOpen }) => {
             <p className="copy2">Copy 2023 @ All rights reserved</p>
             <div className="mobile-view">
             <div className="mobile">
-            <img src="/mobileDB.png" alt="mobile-image" />
+            <img src="/mobile-view1.png" alt="mobile-image" />
             </div>
             </div>
             <div className="modal-information">
-                <h1 className="site-name2">FlixRush</h1>
+                <h1 className="site-name2">ViziGo</h1>
             <p className="modal-text">Unlimited entertainment, anytime, anywhere. Stream on any device, at your convenience. Join us today and start enjoying your favorite content with a click. </p>
            <p className="copy1">Copy 2023 @ All rights reserved</p>
             </div>
