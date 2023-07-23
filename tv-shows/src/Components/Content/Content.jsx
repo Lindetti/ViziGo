@@ -24,7 +24,6 @@ useEffect(() => {
   fetch(getShowsUrl)
     .then((response) => response.json())
     .then((shows) => {
-      console.log(shows)
       const comedyShows = shows.filter((show) => show.genres.includes("Comedy"));
       setComedy(comedyShows);
 
