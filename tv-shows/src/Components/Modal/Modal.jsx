@@ -9,11 +9,17 @@ const Modal = ({ closeModal, isModalOpen }) => {
       }
     };
 
-    if (isModalOpen) {
+    const isMobileView = () => {
+      return window.innerWidth <= 524;
+    };
+
+    if (isModalOpen  && isMobileView()) {
+      document.body.classList.add('modal-open');
       document.addEventListener('click', handleOutsideClick);
     }
 
     return () => {
+      document.body.classList.remove('modal-open');
       document.removeEventListener('click', handleOutsideClick);
     };
   }, [closeModal, isModalOpen]);

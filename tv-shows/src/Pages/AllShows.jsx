@@ -79,7 +79,7 @@ const AllShows = () => {
             })
           )}
         </div>
-        {searchResults.length === 0 ? (
+        {searchResults.length === 0 || searchResults.length < 10 ? (
           <div></div>
         ) : (
 
