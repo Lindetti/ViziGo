@@ -49,7 +49,7 @@ useEffect(() => {
 const handleRightClick = (category, length) => {
   if (category === "action" && actionIndex + 6 < length) {
     setActionIndex(actionIndex + 6);
-  } else if (category === "adventure" && adventureIndex + 5 < length) {
+  } else if (category === "adventure" && adventureIndex + 6 < length) {
     setAdventureIndex(adventureIndex + 6);
   } else if (category === "scienceFiction" && scienceFictionIndex + 6 < length) {
     setScienceFictionIndex(scienceFictionIndex + 6);
