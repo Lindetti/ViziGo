@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     overflow-x: auto;
  -ms-overflow-style: none; 
@@ -167,13 +167,18 @@
     width: 100%;
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
-    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    margin-top: 0.4rem;
     overflow: hidden;
 }
 
 .tv-show-name p {
-    font-size: 1.2rem;
+    height: 25px;
+    width: 172px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -199,9 +204,17 @@
 
 
   @media only screen and (max-width: 524px) {
+    .content-wrapper {
+        margin-top: 1.5rem;
+    }
+    
     .content {
         width: 100%;
         padding: 1rem;
+    }
+
+    .base-box {
+        margin-bottom: 1rem;
     }
 
     .category-title {
