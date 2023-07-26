@@ -1,6 +1,6 @@
 
 .tvshowinfo-wrapper {
-    color: #CCCCCC;
+    color: #d1cfcf;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
 
 .tvshowinfo-image-div {
     width: 260px;
-    height: 550px;
+    height: 545px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -62,6 +62,7 @@
     gap: 1rem;
     width: 75%;
 }
+
 
 .title-info-div {
     display: flex;
@@ -95,6 +96,12 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
+}
+
+.watch-later:hover, .share:hover {
+    text-decoration: underline;
+    color: #00CED1;
 }
 
 .watch-later img, .share img {
@@ -160,7 +167,7 @@
 
 .story-hr {
     width: 82px;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     margin-bottom: 0.8rem;
     border-color: #00CED1;
 }
@@ -188,6 +195,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.webChannel {
+    color: white;
 }
 
 .other-hr {
@@ -240,6 +251,20 @@
     object-fit: cover;
     border-radius: 5px;
 }
+
+.related-show-image img:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.tvShow-info-name {
+    width: 100%;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 
 @media only screen and (max-width: 910px) {
 
