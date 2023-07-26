@@ -8,9 +8,13 @@ const TvShowInfo = () => {
   const { id } = useParams();
   const [showInfo, setShowInfo] = useState([]);
   const [relatedShows, setRelatedShows] = useState([]);
+  const [seasons, setSeasons] = useState([]);
   const getShowsUrl = `https://api.tvmaze.com/shows`;
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  
+    // Fetch Show Information
     const fetchShowInfo = () => {
       fetch(`https://api.tvmaze.com/shows/${id}`)
         .then((response) => response.json())
@@ -22,25 +26,43 @@ const TvShowInfo = () => {
           console.error("Error fetching show information:", error);
         });
     };
-
+  
+    // Fetch Related Shows
     const fetchRelatedShows = () => {
       fetch(getShowsUrl)
         .then((response) => response.json())
         .then((data) => {
           const showsWithImage = data
-            .filter((show) => show.image && show.image.medium) // Filter shows with image
-            .sort(() => 0.5 - Math.random()); // Shuffle shows randomly
-        
-          const randomShows = showsWithImage.slice(0, 5); // Select first 5 random shows
+            .filter((show) => show.image && show.image.medium)
+            .sort(() => 0.5 - Math.random());
+  
+          const randomShows = showsWithImage.slice(0, 5);
           setRelatedShows(randomShows);
         })
         .catch((error) => {
-          console.error("Error fetching related shows:", error);
+          console.error("Error fetching related shows: ", error);
         });
     };
-
+  
+    // Fetch Seasons
+    const fetchSeasons = () => {
+      fetch(`https://api.tvmaze.com/shows/${id}/seasons`)
+        .then((response) => response.json())
+        .then((data) => {
+          setSeasons(data);
+          console.log(data)
+        })
+        .catch((error) => {
+          console.log("Error fetching seasons: ", error);
+        });
+    };
+  
+    // Call the fetch functions
     fetchShowInfo();
+    fetchSeasons();
   }, [id]);
+
+
 
 
   if (showInfo.length === 0) {
@@ -68,6 +90,7 @@ const TvShowInfo = () => {
     </div>
   <button className="playNow">Play now</button>
   <button className="trailer">Watch Trailer</button>
+
     </div>
     
     <div className="tvShow-info-div">
@@ -114,10 +137,10 @@ const TvShowInfo = () => {
     <hr className="information-hr" />
     <p className="information-class"> Production Company: {showInfo.network?.name || "Unknown"} </p>
     <p className="information-class">Rating: {showInfo.rating?.average} </p>
-    <p className="information-class">Released: {showInfo.premiered}</p>
+    <p className="information-class">Seasons: {seasons.length}</p>
     <p className="information-class">Status: {showInfo.status || "Unknown"}</p>
     {showInfo.webChannel !== null ? (
-      <p className="information-class">Watch on: {showInfo.webChannel?.name} </p>
+      <p className="information-class">Watch on: <span className="webChannel">{showInfo.webChannel?.name}</span> </p>
     ) : (
       <p></p>
     )}

@@ -46,6 +46,10 @@ nav {
     border-bottom: 1px solid #0f5c5e;
   }
 
+  .dropdown-title {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   .dropdown-title hr {
     width: 100%;
     margin-top: 1rem;
@@ -63,6 +67,11 @@ nav {
     font-size: 1.1rem;
   }
 
+  .dropdown-links a:hover {
+    color: #00CED1;
+    transition: all 0.3s;
+  }
+
   .icons-dropdown {
     display: flex;
     gap: 0.5rem;
@@ -72,9 +81,6 @@ nav {
     width: 35px;
   }
 
-  .dropdown-links a:hover {
-    text-decoration: underline;
-  }
 
   .show-dropdown {
     display: flex;
