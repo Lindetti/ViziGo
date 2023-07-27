@@ -122,7 +122,7 @@ return (
       <div className="category-title-div">
         <h1 className="category-title">Action</h1>
       </div>
-      <div className="move-right-movie-left">
+      <div className="move-right-move-left">
         <div className="move-next-buttons">
           <button className="left" onClick={() => handleLeftClick("action")}><img src="/left.png" alt="icon" /></button>
           <button className="right" onClick={() => handleRightClick("action", action.length)}><img src="/right.png" alt="icon" /></button>

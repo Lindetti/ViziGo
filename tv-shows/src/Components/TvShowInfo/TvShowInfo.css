@@ -345,7 +345,7 @@
 
         .related-show-div {
             width: 185px;
-            height: 270px;
+            height: 300px;
         }
 
         .related-show-image {
@@ -354,13 +354,14 @@
         }
 
         .tvShow-info-name {
-            display: none;
+          font-weight: bold;
+          height: 25px;
         }
       }
 
       @media only screen and (max-width: 424px) {
         .related-show-div {
-            height: 250px;
+            height: 280px;
             width: 170px;
         }
 
@@ -374,7 +375,7 @@
       @media only screen and (max-width: 380px) {
 
         .related-show-div {
-            height: 230px;
+            height: 260px;
             width: 150px;
         }
 
@@ -388,7 +389,7 @@
 
       @media only screen and (max-width: 350px) {
         .related-show-div {
-            height: 200px;
+            height: 220px;
             width: 130px;
         }
 
