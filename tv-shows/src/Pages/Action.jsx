@@ -7,12 +7,12 @@ const getShowsUrl = `https://api.tvmaze.com/shows`;
 const [action, setAction] = useState([]);
 
 useEffect(() => {
+  window.scrollTo(0, 0);
     fetch(getShowsUrl)
       .then((response) => response.json())
       .then((shows) => {
         const actionShows = shows.filter((show) => show.genres.includes("Action"));
         setAction(actionShows);
-  
       });
   }, []);
 

@@ -7,6 +7,7 @@ const getShowsUrl = `https://api.tvmaze.com/shows`;
 const [drama, setDrama] = useState([]);
 
 useEffect(() => {
+  window.scrollTo(0, 0);
     fetch(getShowsUrl)
       .then((response) => response.json())
       .then((shows) => {
