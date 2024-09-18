@@ -1,183 +1,182 @@
 .modal {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: poof 0.4s;
-    overflow-x: hidden; /* Enable horizontal scrolling */
-    overflow-y: auto; /* Hide vertical scrollbar */
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: poof 0.4s;
+  overflow-x: hidden; /* Enable horizontal scrolling */
+  overflow-y: auto; /* Hide vertical scrollbar */
 }
 
 .modal-content {
   background-color: rgb(0, 30, 35, 0.9);
-    height: 100%;
-    width: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  height: 100%;
+  width: 800px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .mobile-view {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile {
-    background-color: black;
-    height: 500px;
-    width: 70%;
-    border-radius: 20px;
-    border: 5px solid rgb(128, 126, 126);
+  background-color: black;
+  height: 500px;
+  width: 70%;
+  border-radius: 20px;
+  border: 5px solid rgb(128, 126, 126);
 }
 
 .mobile img {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .modal-information {
-    width: 55%;
-    height: 80%;
-    display: flex;
-   justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
+  width: 55%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .site-name2 {
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 0.2rem;
-    color: #00CED1;
-    font-size: 3rem;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 0.2rem;
+  color: #00ced1;
+  font-size: 3rem;
 }
 
-.modal-text  {
-    line-height: 2.3rem;
-    font-size: 1.2rem;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+.modal-text {
+  line-height: 2.3rem;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .copy1 {
-    color: #00CED1;
-    font-family: 'Rajdhani', sans-serif;
+  color: #00ced1;
+  font-family: "Rajdhani", sans-serif;
 }
 
-  .closeDiv {
-    position: absolute;
-    top: 15px;
-    right: 5px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding-right: 0.5rem;
+.closeDiv {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-right: 0.5rem;
+}
+
+.close-icon {
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.close-x {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  font-size: 50px;
+  height: 30px;
+  width: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy2 {
+  display: none;
+}
+
+@media only screen and (max-width: 524px) {
+  .modal {
+    overflow: auto;
+    min-height: 100vh;
+    background-color: #1e1e23;
   }
 
-  .close-icon {
-    position: relative; 
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    border-radius: 5px;
+  .modal-open {
+    overflow: hidden;
   }
-  
-  .close-x {
-    position: absolute;
-    top: -1px;
-    right: 0;
-    font-size: 50px;
-    height: 30px;
-    width: 40px;
+
+  .modal-content {
+    background-color: rgb(0, 30, 35, 0.8);
+    flex-direction: column-reverse;
+    justify-content: start;
+    min-height: 100vh;
+    gap: 1rem;
+  }
+
+  .copy1 {
+    display: none;
+  }
+
+  .copy2 {
+    display: block;
     color: white;
+    margin-top: 0.5rem;
+  }
+
+  .modal-information {
+    width: 100%;
+    height: 220px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0rem;
+    padding: 1rem;
+  }
+
+  .modal-information p {
+    font-size: 1rem;
+  }
+
+  .modal-text {
+    padding: 1rem;
+  }
+
+  .mobile-view {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .copy2 {
-    display: none;
+  .mobile {
+    height: 350px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
-  @media only screen and (max-width: 524px) {
-    .modal {
-        overflow: auto;
-        min-height: 100vh;
-        background-color: #1e1e23;
-    }
-
-    .modal-open {
-      overflow: hidden;
-    }
-    
-    .modal-content {
-      background-color: rgb(0, 30, 35, 0.8);
-      flex-direction: column-reverse;
-      justify-content: start;
-     min-height: 100vh;
-     gap: 1rem;
-    }
-  
-    .copy1 {
-        display: none;
-    }
-
-    .copy2 {
-        display: block;
-        color:  white;
-        margin-top: 0.5rem;
-    }
-  
-    .modal-information {
-        width: 100%;
-        height: 220px;
-        justify-content: start;
-        align-items: center;
-        margin-top: 1rem;
-        gap: 0rem;
-        padding: 1rem;
-      }
-
-      .modal-information p {
-        font-size: 1rem;
-      }
-
-      .modal-text {
-       padding: 1rem;
-      }
-
-      .mobile-view {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .mobile {
-        height: 350px;
-        width: 45%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-      }
-       
-    .site-name2 {
-      font-size: 2rem;
-    }
-
+  .site-name2 {
+    font-size: 2rem;
   }
+}

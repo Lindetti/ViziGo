@@ -1,272 +1,296 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .content-wrapper {
-    min-height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .content {
-    width: 1150px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .base-box {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    overflow-x: auto;
- -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .base-box::-webkit-scrollbar {
   display: none;
 }
 
-
 .content-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .category-title {
-    font-size: 1.5rem;
-    text-transform: uppercase;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #00ced1;
 }
 
 .move-right-move-left {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .move-next-buttons {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-
-.left, .right {
-    background-color: #00CED1;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black !important;
-    transition: all 0.3s;
+.left,
+.right {
+  background-color: #00ced1;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black !important;
+  transition: all 0.3s;
 }
 
-.left:hover,  .right:hover {
-    background-color: white;
+.left:hover,
+.right:hover {
+  background-color: white;
 }
 
-.left img, .right img {
-    height: 20px;
-    width: 30px;
+.left img,
+.right img {
+  height: 20px;
+  width: 30px;
 }
 
-.left:focus, .right:focus {
-    background-color: white;
+.left:focus,
+.right:focus {
+  background-color: white;
 }
 
 .mobile-container {
-    width: 100%; 
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .shows-wrapper-mobile {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    gap: 0.5rem;
-    overflow-x: auto; 
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 0.5rem;
+  overflow-x: auto;
 }
 
 .shows-wrapper {
-    display: flex;
-    height: 100%;
-    gap: 1.20rem;
-    width: 100%;
+  display: flex;
+  height: 100%;
+  gap: 1.2rem;
+  width: 100%;
 }
 
 .shows-mobile {
-    width: 100px;
-    height: 150px;
-    animation-name: fade;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    flex: 0 0 auto;
+  width: 100px;
+  height: 150px;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  flex: 0 0 auto;
 }
 
 .shows {
-    width: 200px;
-    height: 340px;
-    animation-name: fade;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+  width: 200px;
+  height: 340px;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .show-all {
-    width: 180px;
-    height: 272px;
-    background-color: #1e1e23;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    border-radius: 5px;
+  width: 180px;
+  height: 272px;
+  background-color: #1e1e23;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5px;
 }
 
 .show-all-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .show-all h3 {
-    color: white;
+  color: white;
 }
 
 .show-all p {
-    color: rgb(187, 185, 185);
+  color: rgb(187, 185, 185);
 }
-
-
 
 .box-image {
-    width: 100%;
-    height: 80%;
-    animation: fade-in-animation 0.5s ease-in-out forwards;
+  width: 100%;
+  height: 80%;
+  animation: fade-in-animation 0.5s ease-in-out forwards;
 }
 
-
 .box-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .box-image img:hover {
-    opacity: 0.8;
-    transition: all 0.3s;
+  opacity: 0.8;
+  transition: all 0.3s;
 }
 
-
 .tv-show-name {
-    height: 45px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 1.1rem;
-    margin-top: 0.4rem;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .tv-show-name p {
-    height: 25px;
-    width: 172px;
-    font-weight: bold;
+  height: 25px;
+  width: 172px;
+  font-weight: bold;
+}
 
+.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out forwards;
 }
 
 @media only screen and (max-width: 900px) {
-
-    .content {
-        width: 760px;
-    }
-
-    .show-all {
-        display: none;
-    }
-    
-      }
-
-
-@media only screen and (max-width: 768px) {
-
-.content {
-    width: 720px;
-}
-
+  .content {
+    width: 760px;
   }
 
+  .show-all {
+    display: none;
+  }
+}
 
-  @media only screen and (max-width: 524px) {
-    .content-wrapper {
-        margin-top: 1.5rem;
-    }
-    
-    .content {
-        width: 100%;
-        padding: 1rem;
-    }
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 720px;
+  }
+}
 
-    .base-box {
-        margin-bottom: 1rem;
-    }
+@media only screen and (max-width: 524px) {
+  .content-wrapper {
+    margin-top: 1.5rem;
+  }
 
-    .category-title {
-        font-size: 1.3rem;
-    }
+  .content {
+    width: 100%;
+    padding: 1rem;
+  }
 
-    .see-all {
-        display: block;
-    }
+  .base-box {
+    margin-bottom: 1rem;
+    height: auto;
+  }
 
-    .see-all a{
-        color: white;
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
+  .category-title {
+    font-size: 1.3rem;
+  }
 
-    .shows-wrapper {
-        display: flex;
-        gap: 0.5rem;
-        overflow-x: auto; 
-        height: 100%;
-        padding-bottom: 1rem;
-        scroll-snap-type: both;
-    }
-   
-    .shows{
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        scroll-snap-align: start;
-    }
+  .see-all {
+    display: block;
+  }
 
-    .box-image img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
+  .see-all a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
 
-    .tv-show-name {
-        height: 100px;
-        text-align: center;
-    }
+  .shows-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    height: 100%;
+    padding-bottom: 1rem;
+    scroll-snap-type: both;
+  }
 
-    .show-all, .tv-show-name, .move-next-buttons {
-   display: none;
-      }
+  .shows {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-snap-align: start;
+  }
 
-      }
+  .box-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .tv-show-name {
+    height: 100px;
+    text-align: center;
+  }
+
+  .show-all,
+  .tv-show-name,
+  .move-next-buttons {
+    display: none;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,400 +1,423 @@
-
 .tvshowinfo-wrapper {
-    color: #d1cfcf;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
+  color: #d1cfcf;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
 }
 
 .tvShow-content {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 30, 35, 0.9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 30, 35, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .base-content {
-    width: 1200px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
+  width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .show-name {
-    color: white;
-    font-size: 2.5rem;
+  color: white;
+  font-size: 2.5rem;
 }
 
-
 .tvshowinfo-image-div {
-    width: 260px;
-    height: 545px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  width: 260px;
+  height: 545px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .tvShow-image {
-    height: 400px;
-    border: 1px solid #00CED1;
-    border-radius: 5px;
+  height: 400px;
+  border: 1px solid #00ced1;
+  border-radius: 5px;
+  box-shadow: #00ced1 0px 1px 38px, rgba(0, 0, 0, 0.22) 0px 2px 2px;
 }
 
 .tvShow-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .tvShow-info-div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 75%;
 }
 
-
 .title-info-div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .title-info {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title-movie-info {
-    display: flex;
-   gap: 1rem;
-   align-items: center;
-   color: white;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: white;
 }
 
 .title-buttons {
-    display: flex;
-    gap: 2rem;
-   align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
-.watch-later, .share {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
+.watch-later,
+.share {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 
-.watch-later:hover, .share:hover {
-    text-decoration: underline;
-    color: #00CED1;
+.watch-later:hover,
+.share:hover {
+  text-decoration: underline;
+  color: #00ced1;
 }
 
-.watch-later img, .share img {
-    width: 25px;
-    height: 25px;
+.watch-later img,
+.share img {
+  width: 25px;
+  height: 25px;
 }
 
 .title-buttons a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #00CED1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #00ced1;
 }
 
 .show-first-info {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .genres {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
-
 .show-genres {
-    background-color: #00CED1;
-    padding: 0.3rem;
-    color: black;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
+  background-color: #00ced1;
+  padding: 0.3rem;
+  color: black;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
 }
 
 .playNow {
-    padding: 1.2rem;
-    background-color: #00CED1;
-    border: none;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black !important;
+  padding: 1.2rem;
+  background-color: #00ced1;
+  border: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black !important;
 }
 
 .trailer {
-    padding: 1.2rem;
-    background: none;
-    border: 1px solid #00CED1;
-    color: #00CED1;
-    text-transform: uppercase;
-    font-weight: bold;
+  padding: 1.2rem;
+  background: none;
+  border: 1px solid #00ced1;
+  color: #00ced1;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
 
 .info-title {
-    text-transform: uppercase;
-    color: white;
+  text-transform: uppercase;
+  color: white;
 }
-
 
 .story p {
-    line-height: 1.8rem;
+  line-height: 1.8rem;
 }
 
-
 .story-hr {
-    width: 82px;
-    margin-top: 0.1rem;
-    margin-bottom: 0.8rem;
-    border-color: #00CED1;
+  width: 82px;
+  margin-top: 0.1rem;
+  margin-bottom: 0.8rem;
+  border-color: #00ced1;
 }
 
 .information-hr {
-    width: 105px;
-    margin-bottom: 0.4rem;
-    border-color: #00CED1;
+  width: 105px;
+  margin-bottom: 0.2rem;
+  border-color: #00ced1;
+}
+
+.information-class {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.information-class img {
+  width: 15px;
+}
+
+.information-class a {
+  color: #00ced1;
 }
 
 .language-hr {
-    width: 93px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.8rem;
-    border-color: #00CED1;
-}
-
-.information-div {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-.information {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.webChannel {
-    color: white;
+  width: 93px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+  border-color: #00ced1;
 }
 
 .other-hr {
-    margin-top: 0.7rem;
-    border-color: #00CED1;
+  width: 53px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+  border-color: #00ced1;
 }
 
-.languages {
-    display: flex;
-    flex-direction: column;
+.information-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
+.other-info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.more-hr {
+  margin-top: 0.7rem;
+  border-color: #00ced1;
+}
+
+.languages-other {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
 
 .related-shows {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
 .related-shows-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  height: auto;
 }
 
 .related-show-div {
-    height: 270px;
-    width: 155px;
-    display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 0.5rem;
+  height: 270px;
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .related-show-image {
-    height: 235px;
-    border: 1px solid #00CED1;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 235px;
+  border: 1px solid #00ced1;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .related-show-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .related-show-image img:hover {
-    opacity: 0.8;
-    transition: all 0.3s;
+  opacity: 0.8;
+  transition: all 0.3s;
 }
 
 .tvShow-info-name {
-    width: 100%;
-    font-weight: bold;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  width: 100%;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
+.running {
+  color: green;
+}
+
+.ended {
+  color: rgb(209, 82, 82);
+}
 
 @media only screen and (max-width: 910px) {
+  .base-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+  }
 
-    .base-content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 1000px;
-    }
+  .related-show-div {
+    height: 220px;
+    width: 125px;
+  }
+}
 
-    .related-show-div {
-        height: 220px;
-        width: 125px;
-    }
-    
-      }
+@media only screen and (max-width: 524px) {
+  .first-line {
+    display: none;
+  }
 
-      @media only screen and (max-width: 524px) {
-       
-        .first-line {
-            display: none;
-        }
+  .title-buttons {
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
 
+  .title-buttons img {
+    display: none;
+  }
 
-        .title-buttons {
-            justify-content: center;
-            gap: 1rem;
-            width: 100%;
-        }
+  .base-content {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+    gap: 0;
+  }
 
-        .title-buttons img {
-            display: none;
-        }
-       
+  .show-name {
+    text-align: center;
+  }
 
-        .base-content {
-            width: 100%;
-            padding: 0;
-            margin-top: 2rem;
-            gap: 0;
-        }
+  .show-first-info {
+    font-size: 1.1rem;
+  }
 
-        .show-name {
-            text-align: center;
-        }
+  .tvShow-info-div {
+    width: 100%;
+    padding: 1rem;
+  }
 
-        .show-first-info {
-            font-size: 1.1rem;
-        }
+  .title-info-div {
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #00ced1;
+  }
 
-        .tvShow-info-div {
-            width: 100%;
-            padding: 1rem;
-        }
+  .title-info {
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 0rem;
+  }
 
-        .title-info-div {
-            gap: 1rem;
-        }
+  .title-movie-info {
+    flex-direction: column;
+  }
 
-        .title-info {
-            flex-direction: column;
-            justify-content: start;
-        }
+  .related-shows {
+    margin-bottom: 1rem;
+  }
 
-        .title-movie-info {
-            flex-direction: column;
-        }
+  .related-shows-content {
+    justify-content: center;
+    height: auto;
+  }
 
-        .related-shows {
-            margin-bottom: 1rem;
-        }
+  .related-show-div {
+    width: 185px;
+    height: 300px;
+  }
 
+  .related-show-image {
+    height: 100%;
+    width: 100%;
+  }
 
-        .related-shows-content {
-            justify-content: center;
-            height: auto;
-        }
+  .tvShow-info-name {
+    font-weight: bold;
+    height: 25px;
+  }
 
-        .related-show-div {
-            width: 185px;
-            height: 300px;
-        }
+  .watch-later,
+  .share {
+    display: none;
+  }
+}
 
-        .related-show-image {
-            height: 100%;
-            width: 100%;
-        }
+@media only screen and (max-width: 424px) {
+  .related-show-div {
+    height: 280px;
+    width: 170px;
+  }
 
-        .tvShow-info-name {
-          font-weight: bold;
-          height: 25px;
-        }
-      }
+  .related-show-image {
+    height: 100%;
+    width: 100%;
+  }
+}
 
-      @media only screen and (max-width: 424px) {
-        .related-show-div {
-            height: 280px;
-            width: 170px;
-        }
+@media only screen and (max-width: 380px) {
+  .related-show-div {
+    height: 260px;
+    width: 150px;
+  }
 
-        
-        .related-show-image {
-            height: 100%;
-            width: 100%;
-        }
-      } 
-      
-      @media only screen and (max-width: 380px) {
+  .related-show-image {
+    height: 100%;
+    width: 100%;
+  }
+}
 
-        .related-show-div {
-            height: 260px;
-            width: 150px;
-        }
+@media only screen and (max-width: 350px) {
+  .related-show-div {
+    height: 220px;
+    width: 130px;
+  }
 
-        .related-show-image {
-            height: 100%;
-            width: 100%;
-        }
-
-
-      }
-
-      @media only screen and (max-width: 350px) {
-        .related-show-div {
-            height: 220px;
-            width: 130px;
-        }
-
-        .related-show-image {
-            height: 100%;
-            width: 100%;
-        }
-    }
+  .related-show-image {
+    height: 100%;
+    width: 100%;
+  }
+}
