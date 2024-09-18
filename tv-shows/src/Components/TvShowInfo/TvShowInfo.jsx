@@ -168,7 +168,7 @@ const TvShowInfo = () => {
                     {showInfo.status || "Unknown"}
                   </b>
                 </div>
-                {showInfo.network.name !== null ? (
+                {showInfo.network !== null && showInfo.network.name !== null ? (
                   <div className="information-class">
                     <p>Watch on:</p>
                     <a href={showInfo.officialSite} target="_blank">
