@@ -1,155 +1,155 @@
 nav {
   background-color: #16181f;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 20px;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid #0f5c5e;
-    z-index: 9999;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 20px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #0f5c5e;
+  z-index: 9999;
 }
 
 .dropdown {
-    position: relative;
-    color: black;
-    padding:  0.5rem;
-    height: 70px;
-    font-size: 1.3rem;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-  }
+  position: relative;
+  color: black;
+  padding: 0.5rem;
+  height: 70px;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
 
-  .mobile-menu-icon {
-    cursor: pointer;
-  }
-  
+.mobile-menu-icon {
+  cursor: pointer;
+}
 
-  .dropdown-content {
-    position: absolute;
-    z-index: 1;
-    width: 350px;
-    height: 285px;
-    background-color: #16181f;
-    display: none;
-    flex-direction: column;
-    top: 65px;
-    gap: 1rem;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 5px 8px 10px 0px rgba(0,0,0,0.9);
-    padding: 1rem;
-    color: white;
-    animation: poof 0.4s;
-    border-bottom: 1px solid #0f5c5e;
-  }
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  width: 320px;
+  height: 300px;
+  background-color: #16181f;
+  display: none;
+  flex-direction: column;
+  top: 65px;
+  gap: 1rem;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  color: white;
+  animation: poof 0.4s;
+  border-bottom: 1px solid #0f5c5e;
+}
 
-  .dropdown-title {
-    font-family: 'Montserrat', sans-serif;
-  }
+.dropdown-title {
+  font-family: "Montserrat", sans-serif;
+}
 
-  .dropdown-title hr {
-    width: 100%;
-    margin-top: 1rem;
-    border-color: #00CED1;
-  }
+.dropdown-title hr,
+.test hr {
+  width: 100%;
+  margin-top: 1rem;
+  border-color: #00ced1;
+}
 
-  hr {
-    border-color: #00CED1;
-  }
+hr {
+  border-color: #00ced1;
+}
 
-  .dropdown-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.3rem;
-    font-size: 1.1rem;
-  }
+.dropdown-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.4rem;
+}
 
-  .dropdown-links a:hover {
-    color: #00CED1;
-    transition: all 0.3s;
-  }
+.dropdown-links a:hover {
+  color: #00ced1;
+  transition: all 0.3s;
+}
 
-  .icons-dropdown {
-    display: flex;
-    gap: 0.5rem;
-  }
+.links-dropdown {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
 
-  .icons-dropdown img {
-    width: 35px;
-  }
+.links-dropdown a {
+  color: #fff;
+  text-decoration: none;
+}
 
-
-  .show-dropdown {
-    display: flex;
-    flex-direction: column;
-  }
-
+.show-dropdown {
+  display: flex;
+  flex-direction: column;
+}
 
 .logo {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .logo p {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-top: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
-.dropdown-categorie, .dropdown-menu {
-    color: white;
-    text-decoration: none;
+.dropdown-categorie,
+.dropdown-menu {
+  color: white;
+  text-decoration: none;
 }
 
-.site-name { 
-  color: #00CED1;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.1rem;
+.site-name {
+  color: #00ced1;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 .site-nameTwo {
-  color: #00CED1;
+  color: #00ced1;
   font-size: 2rem;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.2rem;
   display: none;
   margin-top: 1rem;
 }
 
-
 .mobile-app {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #00CED1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #00ced1;
 }
 
 .about {
   text-decoration: none;
-  color: #00CED1;
+  color: #00ced1;
   font-size: 1.2rem;
 }
 
 .mobile-app button {
-    padding: 0.8rem 1.5rem;
-    border: 1px solid  #00CED1;
-    color:  #00CED1;
-    background: none;
-    border-radius: 1px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: all 0.4s;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #00ced1;
+  color: #00ced1;
+  background: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.4s;
 }
 
 .mobile-app button:hover {
-  background-color: #00CED1;
+  background-color: #00ced1;
   color: black;
 }
 
@@ -163,10 +163,8 @@ nav {
   width: 100%;
   height: auto;
   padding-right: 0.5rem;
-  display: none;
 }
 
-  
 .close-x-navbar {
   position: absolute;
   top: -1px;
@@ -178,39 +176,32 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 524px) {
-nav {
-  padding-left: 5px;
-  padding-right: 8px;
-}
+  nav {
+    padding-left: 5px;
+    padding-right: 8px;
+  }
 
-.logo {
-  gap: 0.7rem;
-}
+  .logo {
+    gap: 0.7rem;
+  }
 
-.icons-dropdown {
-  display: none;
-}
+  .icons-dropdown {
+    display: none;
+  }
 
-.closeDiv-navbar {
-  display: block;
-}
+  .closeDiv-navbar {
+    display: block;
+  }
 
   .dropdown-content {
     left: 0;
     padding: 1rem;
-    height: 250px;
     gap: 1rem;
   }
-
-
-
-  .dropdown-links {
-    gap: 1.5rem;
-  }
-
 
   .site-name {
     font-size: 1.6rem;
@@ -219,7 +210,4 @@ nav {
   .site-nameTwo {
     display: block;
   }
-
 }
-
-
