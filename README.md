@@ -1,1 +1,1 @@
-# FlixRush - made with TVMaze API
+# ViziGo - made with TVMaze API
