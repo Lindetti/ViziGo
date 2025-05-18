@@ -50,7 +50,7 @@ const Content = () => {
       .catch((error) => {
         console.error("Error fetching shows:", error);
       });
-  }, []);
+  });
 
   const handleRightClick = (category, length) => {
     if (category === "action" && actionIndex + 6 < length) {
@@ -89,6 +89,7 @@ const Content = () => {
 
   return (
     <div className="content-wrapper">
+      <div className="side-pin-left"></div>
       <div className="content">
         {/*  ACTION */}
         {window.innerWidth < 600 ? (
@@ -628,6 +629,7 @@ const Content = () => {
           </div>
         )}
       </div>
+      <div className="side-pin-right"></div>
     </div>
   );
 };

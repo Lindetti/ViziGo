@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import HamburgerMenu from "react-hamburger-menu";
 import Modal from "../Modal/Modal";
@@ -10,20 +10,24 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showDropdownFunc = () => {
-    setShowDropDown(true);
+    setShowDropDown(!showDropDown);
+    if (!showDropDown) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
   };
 
   const closeDropdownFunc = () => {
     setShowDropDown(false);
+    document.body.classList.remove("menu-open");
   };
 
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setShowDropDown(false);
-    }
-  };
-
-  window.onclick = handleClickOutside;
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
+  }, []);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -47,7 +51,7 @@ const Navbar = () => {
             rotate={0}
             borderRadius={0}
             animationDuration={0.5}
-            isOpen={false}
+            isOpen={showDropDown}
           />
           <div
             className={`dropdown-content ${
@@ -122,13 +126,14 @@ const Navbar = () => {
             <hr />
             <div className="links-dropdown">
               <NavLink to="/" onClick={closeDropdownFunc}>
-                Home
-              </NavLink>
-              <NavLink to="/" onClick={closeDropdownFunc}>
                 About
               </NavLink>
             </div>
           </div>
+          <div
+            className={`menu-overlay ${showDropDown ? "show" : ""}`}
+            onClick={closeDropdownFunc}
+          ></div>
         </div>
         <NavLink className="site-name" to="/">
           ViziGo

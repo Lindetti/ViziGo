@@ -4,11 +4,9 @@ import { useState, useEffect } from "react";
 
 const AllShows = () => {
   const [allShows, setAllShows] = useState([]);
-  const [searchResults, setSearchResults] = useState([]);
   const [page, setPage] = useState(1);
   const [filtered, setFiltered] = useState([]);
   const [input, setInput] = useState("");
-  const [hasSearched, setHasSearched] = useState(false);
 
   useEffect(() => {
     fetch(`https://api.tvmaze.com/shows?page=${page}`)
@@ -33,17 +31,16 @@ const AllShows = () => {
           const filteredResults = results.filter(
             (result) => result.show.image && result.show.image.medium
           );
-          setSearchResults(filteredResults.map((result) => result.show));
-          console.log(filteredResults);
+          setFiltered(filteredResults.map((result) => result.show));
         })
         .catch((error) => {
           console.log(error);
         });
     } else {
       // Återställ till vanliga resultat om sökfältet är tomt
-      setSearchResults([]);
+      setFiltered(allShows);
     }
-  }, [input]);
+  }, [input, allShows]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -62,11 +59,11 @@ const AllShows = () => {
   const handleOnChange = (event) => {
     const inputValue = event.target.value;
     setInput(inputValue);
-    setHasSearched(true);
   };
 
   return (
     <div className="all-wrapper">
+      <div className="side-pin-left"></div>
       <div className="all-content-wrapper">
         <div className="all-header">
           <div className="title-all-shows">
@@ -83,30 +80,28 @@ const AllShows = () => {
           />
         </div>
         <div className="all-content">
-          {input && searchResults.length === 0 ? (
+          {input && filtered.length === 0 ? (
             <div className="notfound-div">
               <h1 className="not-found">
-                We couldn't find any shows with that name.
+                We could not find any shows with that name.
               </h1>
               <h1>:(</h1>
             </div>
           ) : (
-            (input ? searchResults : allShows)
-              .slice(0, 36)
-              .map((show, index) => {
-                return (
-                  <div key={index} className="all-shows">
-                    <div className="all-shows-image">
-                      <Link to={`/info/${show.id}`}>
-                        <img src={show.image.medium} alt="tv-show-image" />
-                      </Link>
-                    </div>
-                    <div className="all-shows-title">
-                      <p>{show.name}</p>
-                    </div>
+            filtered.slice(0, 36).map((show, index) => {
+              return (
+                <div key={index} className="all-shows">
+                  <div className="all-shows-image">
+                    <Link to={`/info/${show.id}`}>
+                      <img src={show.image.medium} alt="tv-show-image" />
+                    </Link>
                   </div>
-                );
-              })
+                  <div className="all-shows-title">
+                    <p>{show.name}</p>
+                  </div>
+                </div>
+              );
+            })
           )}
         </div>
         {!input && (
@@ -125,6 +120,7 @@ const AllShows = () => {
           </div>
         )}
       </div>
+      <div className="side-pin-right"></div>
     </div>
   );
 };
