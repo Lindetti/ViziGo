@@ -1,52 +1,54 @@
 import "./Pages.css";
-import {Link} from "react-router-dom";
-import {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Horror = () => {
-const getShowsUrl = `https://api.tvmaze.com/shows`;
-const [horror, setHorror] = useState([]);
+  const getShowsUrl = `https://api.tvmaze.com/shows`;
+  const [horror, setHorror] = useState([]);
 
-useEffect(() => {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
     fetch(getShowsUrl)
       .then((response) => response.json())
       .then((shows) => {
-        const horrorShows = shows.filter((show) => show.genres.includes("Horror"));
+        const horrorShows = shows.filter((show) =>
+          show.genres.includes("Horror")
+        );
         setHorror(horrorShows);
-        console.log(horrorShows)
+        console.log(horrorShows);
       });
-  }, []);
+  }, [getShowsUrl]);
 
-    return (
-        <div className="all-wrapper"> 
-        <div className="all-content-wrapper">
-          <div className="title-wrapper"> 
-        <div className="all-title">
-       <h1>Horror</h1>
-       </div>
-       </div>
-
+  return (
+    <div className="all-wrapper">
+      <div className="side-pin-left"></div>
+      <div className="all-content-wrapper">
+        <div className="title-wrapper">
+          <div className="all-title">
+            <h1>Horror</h1>
+          </div>
+        </div>
 
         <div className="all-content">
-        {horror.slice(1, 19).map((show, index) => {
+          {horror.slice(1, 19).map((show, index) => {
             return (
-                <div key={index} className="all-shows">
-                  <div className="all-shows-image">
+              <div key={index} className="all-shows">
+                <div className="all-shows-image">
                   <Link to={`/info/${show.id}`}>
-      <img src={show.image.medium} alt="tv-show-image" />
-    </Link>
-                  </div>
-                  <div className="all-shows-title">
-                    <p>{show.name}</p>
-                  </div>
+                    <img src={show.image.medium} alt="tv-show-image" />
+                  </Link>
                 </div>
-            )
-        })}
+                <div className="all-shows-title">
+                  <p>{show.name}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
-        </div>
-        
-        </div>
-    )
-}
+      </div>
+      <div className="side-pin-right"></div>
+    </div>
+  );
+};
 
 export default Horror;

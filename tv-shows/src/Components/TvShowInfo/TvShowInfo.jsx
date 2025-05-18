@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import "./TvShowInfo.css";
-import React, { useEffect, useState, useRef } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const TvShowInfo = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [showInfo, setShowInfo] = useState([]);
   const [relatedShows, setRelatedShows] = useState([]);
   const [seasons, setSeasons] = useState([]);
@@ -62,7 +64,7 @@ const TvShowInfo = () => {
     // Call the fetch functions
     fetchShowInfo();
     fetchSeasons();
-  }, [id]);
+  }, [id, getShowsUrl]);
 
   if (showInfo.length === 0) {
     return <div>Loading...</div>;
@@ -79,9 +81,17 @@ const TvShowInfo = () => {
     ? showInfo.summary.replace(/<[^>]+>/g, "")
     : "";
 
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="tvshowinfo-wrapper" style={backgroundImage}>
       <div className="tvShow-content">
+        <div className="back-btn" onClick={goBack}>
+          <img src="/left.png" alt="icon" />
+          <p>Back</p>
+        </div>
         <div className="base-content">
           <div className="tvshowinfo-image-div">
             <div className="tvShow-image">
@@ -171,7 +181,11 @@ const TvShowInfo = () => {
                 {showInfo.network !== null && showInfo.network.name !== null ? (
                   <div className="information-class">
                     <p>Watch on:</p>
-                    <a href={showInfo.officialSite} target="_blank">
+                    <a
+                      href={showInfo.officialSite}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {showInfo.network.name}
                     </a>
                   </div>
